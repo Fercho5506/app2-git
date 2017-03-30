@@ -1,0 +1,272 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>primera aplicacion</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/tema-app1.min.css"/>
+<link rel="stylesheet"href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet"href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('AM.jpg')">
+
+<div data-role="page" id="Principal" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>TELEFONÍA CELULAR</h1>
+</div>
+<div>
+<ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>¿QUE ES UN TELÉFONO CELULAR?</h2>
+<p>Pulse para más información...</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>HISTORIA DE LA TELEFONIA CELULAR</h2>
+<p>Pulse para más información...</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>CLASIFICASIÓN DE LA TECNOLOGÍA CELULAR</h2>
+<p>Pulse para más información...</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2> COMPAÑIAS QUE MANEJAN LA TELEFONÍA CELULAR EN MÉXICO </h2>
+<p>Pulse para más información...</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2> TELEFONOS CELULARES DEL FUTURO</h2>
+<p>Pulse para más información...</p>
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div data-role="footer" align="center" data-theme="b" data-position="fixed"> 
+<div>
+<img src="imagenes/mobile.jpg" width="46" height="46">
+</div>
+<div>
+<h4> Aplicacion uno </h4>
+<h4> Fernando Muñoz Herrada </h4>
+</div>
+</div>
+</div>
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1> Un teléfono celular es:</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<h2> Un dispositivo inalámbrico electrónico que permite tener acceso a la red de telefonía celular o móvil. Se denomina celular debido a las antenas repetidoras que conforman la red, cada una de las cuales es una célula, si bien existen redes telefónicas móviles satelitales.<br>Y unos de los celulares mas modernos y de alta gama son:</h2>
+</div>
+</div>
+<div data-role="collapsible" data-content-theme="false">
+<h1>Samsung</h1>
+<div>
+<p>Samsung Galaxy S8</p>
+<br>
+</div>
+<div>
+ <img src="Galaxy S8.jpg" width="728" height="581"> 
+</div>
+</div>
+<div data-role="collapsible" data-content-theme="false">
+<h1>iphone</h1>
+<div>
+<p>iphone 7 plus</p>
+<br>
+</div>
+<div>
+ <img src="iphone7plus.jpg" width="728" height="581"> 
+</div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4> Aplicacion Dos FMH </h4>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1> La historia de la telefonia celular desde su inicio es:</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+ <h2>Primera generación. El 3 de abril de 1973, Martín Cooper directivo de Motorola realizó la primera llamada desde un teléfono móvil del proyecto DynaTAC 8000X desde una calle de Nueva York. precisamente a su mayor rival en el sector de <strong>telefonía</strong>: Joel Engel, de los Bell Labs de AT&amp;T.</h2>
+ <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image8','','AM.jpg',1)"><img src="AA.jpg" width="220" height="293" id="Image8"></a></p>
+ <p>&nbsp;</p>
+</div>
+ </div>
+<div data-role="footer" data-therme=”a” data-position="fixed">
+<h4>Aplicacion Dos, FMH </h4>
+</div>
+</div>
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1> CLASIFICACIÓN DE LOS TELÉFONOS CELULARES </h1>
+</div>
+<div dala-role="content" align="center">
+<div>
+   <h2> GAMA BAJA: barato, single core, ics como mínimo, y como dicen los compradores de estas gamas &quot;con que tenga whatsaap y feisbu" </h2> 
+</div>
+</div>
+<div data-role="collapsible" data-content-theme="false">
+<h1>Gama Baja</h1>
+<div>
+<p>Samsung Galaxy Fame</p>
+<br>
+</div>
+<div>
+ <img src="GB.jpg" width="728" height="581"> 
+</div>
+</div>
+<div dala-role="content" align="center">
+<div>
+   <h2> GAMA MEDIA: accesible, materiales aceptables, resolución 480x800 como mínimo, dual core y jelly bean. </h2> 
+</div>
+</div>
+<div data-role="collapsible" data-content-theme="false">
+<h1>Gama Media</h1>
+<div>
+<p>5.LG x Screen</p>
+<br>
+</div>
+<div>
+ <img src="GM.jpg" width="728" height="581"> 
+</div>
+</div>
+<div dala-role="content" align="center">
+<div>
+   <h2> GAMA ALTA: excelentes materiales, exelente cámara, actualizaciones resientes, resolución HD, quad core, tamaño aceptable. </h2> 
+</div>
+</div>
+<div data-role="collapsible" data-content-theme="false">
+<h1>Gama Alta</h1>
+<div>
+<p>Google Pixel XL</p>
+<br>
+</div>
+<div>
+ <img src="GA.jpg" width="728" height="581"> 
+</div>
+</div>
+<div data-role="footer" data-theme="b" data-position="fixed">
+<h4>Aplicacion Uno, FMH </h4>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1> COMPAÑIAS CELULARES EN MÉXICO </h1>
+</div>
+<div data-role="content" align="center">
+<div>
+  <h2><p>En México principalmete la compañia que manda es &quot;Telcel&quot; pero hay otras compañias como:</p>
+<p>Planes AT&amp;T.</p>
+<p><img src="at&t.png" width="88" height="44"></p>
+<p> Planes Movistar. </p>
+<p><img src="movistar.png" width="88" height="55"></p>
+<p>Planes  Iusacell. </p>
+<p><img src="iusacell.jpeg" width="88" height="55"></p>
+<p>Planes Nextel.</p>
+<p><img src="nextel.jpeg" width="88" height="55"> </p>
+<p>Planes Unefon. </p>
+<p><img src="unefon.jpeg" width="88" height="55"></p>
+<p>Planes Axtel.</p>
+<p><img src="axtel.jpeg" width="88" height="55"></p>
+  </h2>
+</div>
+</div>
+<div data-role="footer" data-theme="b" data-position="fixed">
+<h4>Aplicacion Uno, FMH </h4>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>TELÉFONOS CELULARES DEL FUTURO</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<H2>Como podemos ver la tecnología y la telefonía avansan demasiado rapido diariamente, y aqui podemos ver unos los proyectos celulares mas avansados que no tardaran mucho en salir.</H2>
+<div data-role="collapsible" data-content-theme="false">
+<h1>NOKIA FORMA HUMANA</h1>
+<div>
+<p>Nokia está investigando el futuro de los teléfonos móviles y ha creado una nueva forma extraña para interactuar con nuestros dispositivos. Nokia lo llama al concepto como Human Form. Nokia sólo mostró un maniquí de la maqueta en Nokia World en octubre.</p>
+<BR>
+<P>HumanForm combina los métodos actuales de control con pantalla táctil y otras nuevas tecnologías haciendo que toda la superficie del teléfono un elemento funcional. </p>
+<br>
+</div>
+<div>
+ <img src="NH.jpg" width="728" height="581"> 
+</div>
+</div>
+<div data-role="collapsible" data-content-theme="false">
+<h1>Mozilla Seabird</h1>
+<div>
+<p>Mozilla, muy centrada en el desarrollo de su navegador (un poco olvidado con la llegada de Chrome entre los early adopters y usuarios intensivos de Internet), se ha sumado a las empresas que con un vídeo y un par de buenas ideas, nos hacen soñar con los teléfonos del futuro. Como Nokia, aunque haga tiempo que los finlandeses estén pensando en otra cosa.</p>
+<br>
+<p>Como en los diseños conceptuales dejar volar la imaginación es lo que toca, el Mozilla Seabird puede presumir de ideas interesantes como el picoproyector para tener un teclado físico virtual en cualquier superficie, o un ratón 3D que actúa también como un manos libres. Todo perfectamente integrado en un diseño curvado con un frontal todo pantalla de gran resolución y cámara de fotos de 8 megapíxeles.</p>
+<br>
+</div>
+<div>
+ <img src="MZ.jpg" width="728" height="581"> 
+</div>
+</div>
+<div data-role="collapsible" data-content-theme="false">
+<h1>GALAXY S</h1>
+<div>
+<p>Samsung lanzará teléfonos plegables en 2017 y no se llamarán 'Galaxy S' ​Según Bloomberg, la empresa lanzaría dos teléfonos con pantalla flexible el año que viene y uno de ellos sería capaz de doblarse. </p>
+<br>
+</div>
+<div>
+ <img src="SS.jpg" width="728" height="581"> 
+</div>
+</div>
+<div data-role="footer" data-theme="b" data-position="fixed">
+<h4>Aplicacion Uno, FMH </h4>
+</div>
+</div>
+
+</body>
+</html>
